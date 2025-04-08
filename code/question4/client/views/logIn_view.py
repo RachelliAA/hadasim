@@ -1,16 +1,8 @@
-from PySide6.QtWidgets import QMainWindow, QApplication, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QCheckBox, QButtonGroup
+from PySide6.QtWidgets import QMainWindow, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit
 from PySide6.QtGui import QFont
 from PySide6.QtCore import Qt
 
 from PySide6.QtWidgets import QWidget, QVBoxLayout
-
-#from client.controllers.login_controller import LoginController
-
-
-from PySide6.QtWidgets import QApplication
-import sys
-#from client.controllers.login_controller import LoginController
-from controllers.login_controller import LoginController
 
 
 class LoginView(QMainWindow):
@@ -66,7 +58,6 @@ class LoginView(QMainWindow):
         self.signup_button.setVisible(True)  # Initially shown
         self.layout.addWidget(self.signup_button)
 
-    #         self.signup_button.setStyleSheet("background-color: #4caf50; color: black; padding: 10px;")  # Original color
 
     def show_information(self, message):
         QMessageBox.information(self, "Information", message)

@@ -29,7 +29,6 @@ class signupController:
 
 
             url = f"{self.api_url}/suppliers"  
-            #new_supplier.to_dict() 
 
             response = requests.post(url, json=new_supplier.to_dict())
 
@@ -37,8 +36,6 @@ class signupController:
             print("Response:", response.json())
 
 
-
-            #name, status = self.model.add_supplier(supplier_data)
             print("supplier", new_supplier)
             print("status", response.status_code)
             if response.status_code == 201 or response.status_code == 200:
@@ -59,7 +56,6 @@ class signupController:
 
     def show_orders_view(self, username,supplier_id):
         #self.order = Order()
-        self.orders_view = OrdersView(username)
-        #self.orders_controller = OrdersController(self.traveler_model, self.traveler_view,traveler_id)
+        self.orders_view = OrdersView()
         self.orders_controller = OrdersController(self.orders_view,supplier_id)
         self.orders_view.show()      

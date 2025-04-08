@@ -1,8 +1,8 @@
 # server.py
-from fastapi import FastAPI, HTTPException, Request
-from server.models.Item import Item
-from server.models.suppliers import suppliers
-from server.models.Order import Order
+from fastapi import FastAPI, HTTPException
+from models.Item import Item
+from models.suppliers import suppliers
+from models.Order import Order
 import json
 import os
 
@@ -31,12 +31,6 @@ def write_orders(orders):
     with open(JSON_FILE, "w") as f:
         json.dump(orders, f, indent=4)
 
-# # gets the next order id
-# def get_next_order_id(orders):
-#     if not orders:
-#         return 1
-#     last_id = orders[-1] #max(order["id"] for order in orders)
-#     return last_id + 1
 
 # Routes
 #gets all the orders from the DB
@@ -200,4 +194,3 @@ async def add_item(item: ItemPydantic):
         
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-

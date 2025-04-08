@@ -1,9 +1,7 @@
-from PySide6.QtWidgets import QMainWindow, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QCheckBox, QButtonGroup
-from PySide6.QtGui import QFont
+from PySide6.QtWidgets import QMainWindow, QMessageBox, QWidget, QVBoxLayout, QLabel
 from PySide6.QtCore import Qt
 
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QListWidget
-import sys
 
 class NewOrderView(QMainWindow):
     def __init__(self):

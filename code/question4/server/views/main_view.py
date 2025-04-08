@@ -1,11 +1,8 @@
-from PySide6.QtWidgets import QMainWindow, QApplication, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton
+from PySide6.QtWidgets import QMainWindow, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton
 from PySide6.QtCore import Qt
 
 from PySide6.QtWidgets import QWidget, QVBoxLayout, QListWidget
-import sys
 
-from controllers.main_controller import MainController
-#from server.controllers import main_controller
 class MainView(QMainWindow):
     def __init__(self):
         super().__init__()

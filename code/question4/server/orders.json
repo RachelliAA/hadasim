@@ -1,14 +1,14 @@
 [
-  {
-    "id": 1,
-    "supplier_id": 2,
-    "item": "shoes",
-    "status": "delivered"
-  },
-  {
-    "id": 2,
-    "supplier_id": 5,
-    "item": "milk",
-    "status": "pending"
-  }
+    {
+        "id": 1,
+        "supplier_id": 2,
+        "item": "shoes",
+        "status": "in Progress"
+    },
+    {
+        "id": 2,
+        "supplier_id": 5,
+        "item": "milk",
+        "status": "pending"
+    }
 ]

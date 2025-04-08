@@ -1,0 +1,9 @@
+[
+    {
+        "item_id": 1,
+        "name": "plates",
+        "price": 34.0,
+        "min_amount": 3,
+        "supplier_id": 2
+    }
+]

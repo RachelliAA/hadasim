@@ -1,5 +1,4 @@
-from PySide6.QtWidgets import QMainWindow, QApplication, QListWidget, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit, QCheckBox, QButtonGroup
-from PySide6.QtGui import QFont
+from PySide6.QtWidgets import QMainWindow, QListWidget, QMessageBox, QWidget, QVBoxLayout, QLabel, QPushButton, QLineEdit
 from PySide6.QtCore import Qt
 
 from PySide6.QtWidgets import QWidget, QVBoxLayout
